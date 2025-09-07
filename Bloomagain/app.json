@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Bloom",
+    "slug": "Bloom",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/1.png",
+    "scheme": "bloom",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bloom.menopause"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/1.png",
+        "backgroundColor": "#dcccba"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.bloom.menopause",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "category": ["DEFAULT", "BROWSABLE"],
+          "data": {
+            "scheme": "bloom"
+          }
+        }
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/1.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/1.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#467496"
+        }
+      ],
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "linking": {
+      "prefixes": ["bloom://", "https://bloom.app"],
+      "config": {
+        "screens": {
+          "auth": "auth"
+        }
+      }
+    }
+  }
+}
