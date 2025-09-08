@@ -1,14 +1,42 @@
-# MCP - Model Context Protocol Project 
+# Bloom 
 
-A comprehensive full-stack application featuring a React Native mobile app with AI-powered health consultation, secure authentication, and intelligent backend services.
+Bloom is a personalized, multi-agent AI-driven app designed to support women through the menopause journey by providing symptom tracking, tailored health advice, emotional wellness tools, and direct healthcare connection—all with strong privacy and security.
 
-##  Project Overview
+---
 
-MCP (Model Context Protocol) is a modern health and wellness platform that combines:
-- **Mobile App (Bloomagain)**: React Native app with AI-powered health consultations
-- **Backend Services**: Node.js/Express API with MongoDB integration
-- **AI Agent System**: Python Flask backend with LangChain and Google Gemini AI
-- **Secure Authentication**: Enterprise-grade authentication powered by Descope
+## Features
+
+- **Multi-Agent Intelligence**  
+  Specialized AI agents powered by Google Gemini models work collaboratively to deliver expert guidance on symptoms, diet, exercise, and emotional health.
+
+- **Personalized Symptom Tracking**  
+  Users log symptoms, moods, and cycle data to receive tailored insights and trend visualization.
+
+- **Holistic Wellbeing Support**  
+  Exercise and meditation recommendations help manage physical discomfort and emotional stress.
+
+- **Remote Healthcare Access**  
+  AI agents enable booking of online consultations and sharing of detailed health reports with providers.
+
+- **Multiplatform Access & Security**  
+  Available on mobile, web, and WhatsApp with secure, seamless authentication powered by Descope, ensuring user privacy and compliance.
+
+---
+
+## Technology Stack
+
+- **Mobile App:** React Native for cross-platform UI  
+- **AI Backend:** Python Flask with LangChain and Google Gemini  
+- **API Server:** Node.js with Express and MongoDB  
+- **Authentication:** Descope for enterprise-grade security
+
+---
+
+## Why Bloom?
+
+Bloom empowers women to take control of menopause with intelligent, confidential support—breaking stigma and improving quality of life through personalized, data-driven care and easy access to experts. It’s more than an app; it’s a compassionate companion.
+
+---
 
 ##  Project Structure
 
@@ -29,60 +57,33 @@ MCP/
 └── myapp/                      # Legacy components (merged)
 ```
 
-##  Authentication with Descope
+## Authentication with Descope
 
 ### Why Descope?
 
-We chose **Descope** as our authentication provider because it offers:
+We chose **Descope** as our authentication provider because it offers a powerful combination of security, flexibility, and developer-friendly features:
 
--  **Enterprise Security**: Advanced security features with zero security debt
--  **No-Code Flows**: Visual drag-and-drop authentication flow builder
--  **Multi-Platform Support**: Seamless integration across React Native, Node.js, and web
--  **Social Login**: Built-in support for Google, Facebook, GitHub, and more
--  **Developer Experience**: Simple SDK integration with comprehensive documentation
--  **Analytics**: Built-in user analytics and session management
-
+- **Enterprise-Grade Security:** Advanced protection mechanisms with zero security debt to keep user data safe.
+- **No-Code Authentication Flows:** Visual drag-and-drop builder enabling quick customization of login/signup experiences without code.
+- **Multi-Platform Support:** Seamless integration across React Native, Node.js, and web apps, ensuring consistent security everywhere.
+- **Social Login Ready:** Out-of-the-box support for popular providers like Google, Facebook, GitHub, and more.
+- **Developer Experience:** Easy-to-use SDKs with clear documentation for fast integration and maintenance.
+- **Built-In Analytics:** User and session analytics to monitor authentication and security health.
 
 ### Authentication Features
 
--  **Secure Login/Signup**: Email/password and social authentication
--  **Session Management**: Automatic token refresh and validation
--  **Protected Routes**: Route-level authentication guards
--  **User Profiles**: Comprehensive user data management
--  **Multi-Factor Authentication**: Optional MFA for enhanced security
--  **Password Recovery**: Self-service password reset flows
+- **Secure Login & Signup:** Support for email/password, social OAuth, magic links, OTP, and passkeys.
+- **Session Management:** Automatic token renewal and validation to keep users securely logged in.
+- **Protected Routes:** Route-level guards to restrict access based on authentication status.
+- **Comprehensive User Profiles:** Manage detailed user data securely with update and linking capabilities.
+- **Multi-Factor Authentication (MFA):** Optional MFA for extra layers of account protection.
+- **Password Recovery:** Self-service flows enabling users to reset passwords safely and easily.
 
-##  AI-Powered Features
+---
 
-### Intelligent Health Agents
+Descope’s flexible and robust system empowers Bloom to deliver a frictionless, secure authentication experience while complying with healthcare privacy and compliance needs.
 
-Our AI system includes specialized agents for:
 
-1. **Basic Query Agent**: General health information and guidance
-2. **Diet Agent**: Personalized nutrition recommendations
-3. **Exercise Agent**: Fitness plans and workout suggestions
-4. **Consultation Agent**: Medical consultation and symptom analysis
-5. **Orchestrator Agent**: Coordinating between different AI services
-
-### Technology Stack
-- **LangChain**: Advanced AI orchestration and prompt management
-- **Google Gemini AI**: Cutting-edge language model for responses
-- **ChromaDB**: Vector database for intelligent information retrieval
-- **Python Flask**: Lightweight API framework for AI services
-
-##  Mobile App Features
-
-### Core Functionality
--  **Home Dashboard**: Personalized health insights and quick actions
--  **AI Chat Interface**: Natural language health consultations
--  **Calendar Integration**: Appointment scheduling and health tracking
--  **Consultation Booking**: Direct access to healthcare professionals
-
-### UI/UX Highlights
--  **NativeWind Styling**: Tailwind CSS for React Native
--  **Responsive Design**: Optimized for all screen sizes
--  **Modern Interface**: Clean, intuitive user experience
--  **Performance Optimized**: Fast loading and smooth animations
 
 ##  Technology Stack
 
@@ -106,54 +107,25 @@ Our AI system includes specialized agents for:
 - **Google Gemini AI** - Large language model
 - **ChromaDB** - Vector database
 
-### Development Tools
-- **Jest** - JavaScript testing framework
-- **ESLint** - Code linting and formatting
-- **Git** - Version control system
-- **VS Code** - Development environment
-
-##  Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher)
-- Python (v3.11 or higher)
-- Expo CLI
-- MongoDB instance
-- Descope account and project setup
 
 
-
-##  Screenshots & Demo
+## Screenshots & Demo
 
 ### Authentication Flow
-<img width="738" height="1600" alt="Bloom (1)" src="https://github.com/user-attachments/assets/92049c3d-7b7a-4e01-8ee8-a0f78fdc748d" />
+<img width="300" alt="Authentication Flow" src="https://github.com/user-attachments/assets/92049c3d-7b7a-4e01-8ee8-a0f78fdc748d" />
 
-
-
-### Main Dashboard
-
-![WhatsApp Image 2025-09-04 at 01 34 32_e4e87e55](https://github.com/user-attachments/assets/caf8e3e3-ec73-4ef9-b4ff-0f23375df9b5)
-
-
-### AI Chat Interface
-![WhatsApp Image 2025-09-04 at 01 34 33_7c956781](https://github.com/user-attachments/assets/a8d8e436-87b1-4350-8efa-0e3583fbc734)
-
-
-### Calendar & Booking
-![WhatsApp Image 2025-09-04 at 01 34 32_7bb52fd8](https://github.com/user-attachments/assets/81e41f64-0be9-4849-a002-eb140a555449)
-
+### Main Interface Screens
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/caf8e3e3-ec73-4ef9-b4ff-0f23375df9b5" width="250" alt="Main Dashboard"/>
+  <img src="https://github.com/user-attachments/assets/a8d8e436-87b1-4350-8efa-0e3583fbc734" width="250" alt="AI Chat Interface"/>
+  <img src="https://github.com/user-attachments/assets/81e41f64-0be9-4849-a002-eb140a555449" width="250" alt="Calendar & Booking"/>
+</p>
 
 ##  Video Demos
 
 
 
 https://github.com/user-attachments/assets/4530931a-de06-4847-bc48-5f7ae41ad21f
-
-
-
-
-
-https://github.com/user-attachments/assets/c5562274-9fcf-4bc0-9254-d77f9d59611b
 
 
 
